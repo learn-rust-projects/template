@@ -10,8 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 # template for the changelog body
 # https://keats.github.io/tera/docs/#introduction
 body = """
----
-\n
+---\n
 {% if version %}\
     {% if previous.version %}\
         ## [{{ version | trim_start_matches(pat="v") }}]($REPO/compare/{{ previous.version }}..{{ version }}) - {{ timestamp | date(format="%Y-%m-%d") }}
