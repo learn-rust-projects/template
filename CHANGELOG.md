@@ -3,12 +3,11 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
-
-## [unreleased]
+## [0.1.0] - 2026-01-20
 
 ### Features
 
-- infrastructure update (license, rustfmt, vscode, pre-commit, etc.) - ([8eb24fc](https://github.com/learn-rust-projects/template/commit/8eb24fc3c2cede6d9a64ca1a187cc7b063104dce)) - Levio-Z
+- infrastructure update (license, rustfmt, vscode, pre-commit, etc.) - ([5ab985f](https://github.com/learn-rust-projects/template/commit/5ab985f2bb275aeb73d657c3f6f31d192034fd78)) - Levio-Z
 
 ### Other
 
