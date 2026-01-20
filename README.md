@@ -1,83 +1,119 @@
-# Geektime Rust 语言训练营
+# {{project-name}}
 
-## 环境设置
+> This project is inspired by <https://github.com/tyr-rust-bootcamp/template>
 
-### 安装 Rust
+## Environment Setup
+
+### Install Rust
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### 安装 VSCode 插件
+### Recommended VSCode Extensions
 
-- crates: Rust 包管理
-- Even Better TOML: TOML 文件支持
-- Better Comments: 优化注释显示
-- Error Lens: 错误提示优化
-- GitLens: Git 增强
-- Github Copilot: 代码提示
-- indent-rainbow: 缩进显示优化
-- Prettier - Code formatter: 代码格式化
-- REST client: REST API 调试
-- rust-analyzer: Rust 语言支持
-- Rust Test lens: Rust 测试支持
-- Rust Test Explorer: Rust 测试概览
-- TODO Highlight: TODO 高亮
-- vscode-icons: 图标优化
-- YAML: YAML 文件支持
+- **Dependi**: Rust package management extension
+- **CodeLLDB**: Rust debugger
+- **Even Better TOML**: TOML file support
+- **Better Comments**: Enhanced comment display
+- **Error Lens**: Improved error highlighting
+- **GitLens**: Git enhancement
+- **indent-rainbow**: Indentation visualization
+- **Prettier - Code formatter**: Code formatting
+- **REST client**: REST API debugging
+- **rust-analyzer**: Rust language support
+- **Test Explorer UI**: Rust test overview
+- **TODO Highlight**: TODO highlighting
+- **Todo Tree**: TODO list management
+- **vscode-icons**: Icon optimization
+- **YAML**: YAML file support
+- **Code Case Converter**: Code case conversion
+- **markdownlint**: Markdown syntax checking
 
-### 安装 cargo generate
+### Install pre-commit
 
-cargo generate 是一个用于生成项目模板的工具。它可以使用已有的 github repo 作为模版生成新的项目。
-
-```bash
-cargo install cargo-generate
-```
-
-在我们的课程中，新的项目会使用 `tyr-rust-bootcamp/template` 模版生成基本的代码：
-
-```bash
-cargo generate tyr-rust-bootcamp/template
-```
-
-### 安装 pre-commit
-
-pre-commit 是一个代码检查工具，可以在提交代码前进行代码检查。
+pre-commit is a code quality tool that runs checks before committing code.
 
 ```bash
 pipx install pre-commit
 ```
 
-安装成功后运行 `pre-commit install` 即可。
+After installation, run `pre-commit install` to set up git hooks.
 
-### 安装 Cargo deny
+### Install Cargo deny
 
-Cargo deny 是一个 Cargo 插件，可以用于检查依赖的安全性。
+Cargo deny is a Cargo plugin for dependency security auditing.
 
 ```bash
 cargo install --locked cargo-deny
 ```
 
-### 安装 typos
+### Install typos
 
-typos 是一个拼写检查工具。
+typos is a spelling checker for code and documentation.
 
 ```bash
 cargo install typos-cli
 ```
 
-### 安装 git cliff
+### Install git cliff
 
-git cliff 是一个生成 changelog 的工具。
+git cliff is a tool for generating changelogs from git history.
 
 ```bash
 cargo install git-cliff
 ```
 
-### 安装 cargo nextest
+### Install cargo nextest
 
-cargo nextest 是一个 Rust 增强测试工具。
+cargo nextest is an enhanced test runner for Rust projects.
 
 ```bash
 cargo install cargo-nextest --locked
 ```
+
+### Install cargo generate
+
+cargo generate is a project template generator that can create new projects from existing GitHub repositories.
+
+```bash
+cargo install cargo-generate
+```
+
+## Usage
+
+- After installing cargo generate, create a new project using this template:
+
+```bash
+cargo generate --git https://github.com/learn-rust-projects/template
+```
+
+- In the generated project, run `pre-commit install` to set up git hooks.
+- Modify the `name` field in `Cargo.toml` to your project name and update the license if needed.
+- Update the content in `README.md` with your project information.
+- Update the repository URL in `cliff.toml` to match your project's repository.
+- Make your first commit:
+
+```bash
+  git add .
+  git commit -a
+  # Wait for pre-commit hooks to complete
+  git push
+```
+
+- generate the changelog:
+
+```bash
+  git-cliff -o CHANGELOG.md
+```
+
+- tag the release:
+
+```bash
+  git tag -a v0.1.0 -m "chore: Release wx-uploader version 0.5.1"
+  git push --tags
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
