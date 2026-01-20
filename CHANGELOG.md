@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file. See [conven
 ### Bug Fixes
 
 - fix: update cliff.toml
-  add newline after header - ([a8b52fd](https://github.com/learn-rust-projects/template/commit/a8b52fd301f45c0549353a6827d8f548119b35de)) - Levio-Z
+add newline after header - ([a8b52fd](https://github.com/learn-rust-projects/template/commit/a8b52fd301f45c0549353a6827d8f548119b35de)) - Levio-Z
 
 ---
 
