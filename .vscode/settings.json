@@ -26,6 +26,11 @@
             "source.fixAll.markdownlint": "always", // execute markdownlint fix-all on save
         },
     },
+    "[proto]": {
+        "editor.defaultFormatter": "DrBlury.protobuf-vsc" // Use Protobuf VSC as the default formatter for Protobuf files
+    },
+    "protobuf.formatter.preset": "minimal",
+    "protobuf.formatOnSave": true,
     "files.autoSave": "onFocusChange", // Auto-save files when changing focus
     // -----------------------------
     // Inlay Hints (Display Type Information)

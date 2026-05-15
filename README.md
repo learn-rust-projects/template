@@ -29,6 +29,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 - **YAML**: YAML file support
 - **Code Case Converter**: Code case conversion
 - **markdownlint**: Markdown syntax checking
+- **Protobuf VSC**: Protobuf file support
 
 ### Install pre-commit
 
